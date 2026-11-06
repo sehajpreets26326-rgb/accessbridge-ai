@@ -1,0 +1,26 @@
+# AccessBridge AI — Python backend dependencies
+# Tested with Python 3.11+.
+
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# --- Database ---
+SQLAlchemy==2.0.36
+
+# --- Multi-agent framework (Fetch.ai uAgents) ---
+uagents==0.4.0
+
+# --- Knowledge retrieval (RAG) ---
+httpx==0.28.1
+beautifulsoup4==4.12.3
+lxml==5.3.0
+
+# --- Switch Trust guardrails (optional; pass-through if not configured) ---
+pyyaml==6.0.2
+
+# --- Testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0

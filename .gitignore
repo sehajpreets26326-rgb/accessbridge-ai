@@ -1,0 +1,94 @@
+# =============================================================================
+# AccessBridge AI — .gitignore
+# =============================================================================
+
+# --- Secrets & environment (NEVER commit) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+secrets/
+credentials.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Testing & coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- Database (SQLite local file) ---
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+
+# --- Uploads (if file uploads are enabled) ---
+uploads/
+
+# --- Frontend (Vite / Node) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/tsconfig.node.tsbuildinfo
+frontend/vite.config.d.ts
+node_modules/
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- OS ---
+.DS_Store
+*.DS_Store
+ehthumbs.db
+Desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Build artifacts ---
+*.tar.gz
+*.zip

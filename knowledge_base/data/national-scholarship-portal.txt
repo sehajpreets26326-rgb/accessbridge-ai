@@ -1,0 +1,40 @@
+National Scholarship Portal (NSP) — official overview (bundled excerpt)
+
+Portal: National Scholarship Portal.
+Publisher: Government of India, Ministry of Education (and partner ministries).
+Official URL: https://scholarships.gov.in/
+
+What it is:
+- NSP is the single online platform for central and state scholarship schemes in
+  India. It covers pre-matric, post-matric, merit-cum-means and several
+  scheme-specific scholarships (AICTE Pragati & Saksham, UGC Ishan Uday, Post-
+  Matric SC/ST/OBC, and others).
+
+Eligibility (general pattern):
+- Indian nationals studying in recognised institutions.
+- Specific eligibility (income, category, course level) depends on each scheme.
+- Family income limit is typically Rs. 1 lakh to Rs. 8 lakh per annum depending
+  on the scheme.
+
+Documents commonly required:
+- Aadhaar / valid ID.
+- Income certificate (issued by competent authority).
+- Caste / category certificate where applicable.
+- Previous qualifying exam marksheet.
+- Bonafide certificate from the current institution.
+- Bank passbook copy (Aadhaar-linked bank account preferred).
+- Recent passport-size photograph.
+
+Application steps (typical):
+1. Register on scholarships.gov.in with an OTP-verified mobile and email.
+2. Complete the OTR (One Time Registration).
+3. Choose the relevant scholarship scheme and year.
+4. Fill academic, institution and bank details.
+5. Upload documents and submit before the deadline.
+6. Institution and district/state officer verify online.
+7. Approval and DBT disbursal to the student's account.
+
+Notes:
+- Each scheme has its own deadline window; check the portal every year.
+- The portal also shows scheme status, application status and disbursal history.
+- Always verify the current year's scheme list and income criteria on NSP.

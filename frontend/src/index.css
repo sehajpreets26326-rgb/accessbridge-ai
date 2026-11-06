@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AccessBridge AI — editorial design system
+   Premium, calm, public-interest. Inspired by European editorial SaaS:
+   tight grotesque display type, generous whitespace, hairline rules,
+   monospace agent notices, restrained palette (ink navy + warm cream). */
+
+:root {
+  --grid-line: rgba(20, 38, 61, 0.07);
+}
+
+html {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #F7F7F2;
+  color: #14263D;
+}
+
+/* Tabular numbers for any data */
+.nums { font-variant-numeric: tabular-nums; }
+
+/* Editorial display heading */
+.display {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+/* Hairline rule used between sections */
+.hairline {
+  border-top: 1px solid rgba(20, 38, 61, 0.12);
+}
+
+/* Monospace agent "notice" toast — mirrors the AgenticX terminal motif */
+.notice {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  letter-spacing: -0.01em;
+}
+
+/* Subtle dotted/dither texture used behind the hero portrait */
+.dither-bg {
+  background-image: radial-gradient(rgba(220, 235, 250, 0.18) 1px, transparent 1px);
+  background-size: 4px 4px;
+}
+
+/* Pill button */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 180ms ease;
+}
+.btn-pill-primary {
+  background: #14263D;
+  color: #F7F7F2;
+  border: 1px solid #14263D;
+}
+.btn-pill-primary:hover {
+  background: #1E3A5F;
+}
+.btn-pill-ghost {
+  background: transparent;
+  color: #14263D;
+  border: 1px solid rgba(20, 38, 61, 0.16);
+}
+.btn-pill-ghost:hover {
+  border-color: rgba(20, 38, 61, 0.35);
+}
+
+/* Status pills */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  border: 1px solid transparent;
+}
+.status-verified { background: #DCFCE7; color: #15803D; border-color: #BBF7D0; }
+.status-partial  { background: #FEF3C7; color: #B45309; border-color: #FDE68A; }
+.status-unverified, .status-failed { background: #FEE2E2; color: #B91C1C; border-color: #FECACA; }
+.status-received, .status-researching, .status-translating, .status-guiding { background: #DCEBFA; color: #14263D; border-color: #BFDBFE; }
+.status-awaiting_review { background: #FEF3C7; color: #B45309; border-color: #FDE68A; }
+.status-approved, .status-delivered { background: #DCFCE7; color: #15803D; border-color: #BBF7D0; }
+.status-rejected { background: #FEE2E2; color: #B91C1C; border-color: #FECACA; }
+
+/* Card */
+.card {
+  background: #FFFFFF;
+  border: 1px solid rgba(20, 38, 61, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 1px 0 0 rgba(20, 38, 61, 0.04);
+}
+
+/* Focus ring for keyboard a11y */
+:focus-visible {
+  outline: 2px solid #14263D;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Link */
+.link-ink {
+  color: #14263D;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(20, 38, 61, 0.3);
+}
+.link-ink:hover {
+  text-decoration-color: rgba(20, 38, 61, 0.8);
+}
+
+/* Marquee dot grid (AgenticX-style ASCII waveform) used as a section accent */
+.bar-field {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 120px;
+}
+.bar-field span {
+  display: block;
+  width: 4px;
+  background: rgba(20, 38, 61, 0.22);
+  border-radius: 1px;
+}
