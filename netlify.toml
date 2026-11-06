@@ -1,0 +1,12 @@
+# Netlify serves the React frontend as a static site.
+# The FastAPI backend is not deployed here; /api and /switch calls need a separately hosted backend.
+[build]
+  base = "frontend"
+  command = "npm ci --include=dev && npm run build"
+  publish = "dist"
+
+# Client-side routing (react-router): serve index.html for unknown paths.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
